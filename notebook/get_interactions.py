@@ -53,13 +53,13 @@ def fetch_interactions(user, base_url, get_interactions_url):
     return interactions
 
 
-def get_interactions(user, base_url, get_interactions_url, store):
+def get_interactions(user, base_url, get_interactions_url, store=True):
 
     if not user:
         print "Invalid user."
         return
 
-    interactions = fetch_interactions(user, base_url, get_interactions_url, store=True)
+    interactions = fetch_interactions(user, base_url, get_interactions_url)
 
     if store:
 
