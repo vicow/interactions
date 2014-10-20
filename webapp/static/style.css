@@ -2,6 +2,10 @@ body {
 	padding-top: 80px;
 }
 
+.btn-toolbar {
+  margin-left: 250px;
+}
+
 .navbar-brand {
   float: none;
   margin-top: 30px;

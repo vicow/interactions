@@ -23,7 +23,7 @@ function initialize_graph(m, w, h) {
 	// Add a legend
 	graph.append("svg:g")
 		.attr("id", "legend")
-		.attr("transform", "translate(0, " + (h + 50) + ")");
+		.attr("transform", "translate(" + (w - 10 * w / 100) + ", -10)");
 
 	var legend = d3.select("#legend");
 	// Michael
@@ -42,29 +42,29 @@ function initialize_graph(m, w, h) {
 
 	// Sebastian
 	legend.append("line")
-		.attr('x1', 130)
-		.attr('x2', 180)
-		.attr('y1', 0)
-		.attr('y2', 0)
+		.attr('x1', 0)
+		.attr('x2', 50)
+		.attr('y1', 20)
+		.attr('y2', 20)
 		.attr("stroke-width", 4)
 	    .attr("stroke", "lightgreen");
 	legend.append("text")
-		.attr('x', 190)
-		.attr('y', 4)
+		.attr('x', 60)
+		.attr('y', 24)
 		.text('Sebastian')
 		.attr('fill', 'lightgreen');
 
 	// Christian
 	legend.append("line")
-		.attr('x1', 275)
-		.attr('x2', 325)
-		.attr('y1', 0)
-		.attr('y2', 0)
+		.attr('x1', 0)
+		.attr('x2', 50)
+		.attr('y1', 40)
+		.attr('y2', 40)
 		.attr("stroke-width", 4)
 	    .attr("stroke", "salmon");
 	legend.append("text")
-		.attr('x', 335)
-		.attr('y', 4)
+		.attr('x', 60)
+		.attr('y', 44)
 		.text('Christian')
 		.attr('fill', 'salmon');
 
@@ -215,6 +215,8 @@ function initialize_refresh_button() {
 		$.getJSON('/refresh', function(data) {
 			icon.removeClass('fa-spin');
 			if (data.refreshed) {
+
+				draw_plot(url_data, m, w, h, Interactions.frequency, Interactions.period, Interactions.aggregated);
 
 				var alert = '<div class="alert alert-success alert-dismissible" role="alert">\
 							  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>\
