@@ -1,4 +1,4 @@
-interactions
+Interactions
 ============
 
 Work sample for [Interact.io](http://www.interact.io) by [Victor Kristof](mailto:victor.kristof@epfl.ch).
