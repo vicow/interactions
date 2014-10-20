@@ -39,3 +39,5 @@ Then run the web server in the `/webapp` folder using:
 ```
 python2.7 interact.py
 ```
+
+The web site is then available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
