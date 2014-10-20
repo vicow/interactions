@@ -2,6 +2,26 @@ body {
 	padding-top: 80px;
 }
 
+.navbar-brand {
+  float: none;
+  margin-top: 30px;
+}
+
+.navbar > .container {
+  padding-top: 15px;
+}
+
+.navbar>.container .navbar-brand {
+  margin-left: 0;
+}
+
+.alert {
+
+  position: absolute;
+  top: 60px;
+
+}
+
 path {
 	/*stroke: steelblue;*/
 	stroke-width: 4;

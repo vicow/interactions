@@ -3,23 +3,25 @@
 {% block content %}
 
 <div id="controls" class="row">
-	<div class="col-md-4">
-		<button id="aggregate-button" class="btn btn-default btn-md">Aggregate</button>
-	</div>
+	<div class="btn-toolbar center-block" role="toolbar">
+		<div class="btn-group">
+			<button id="refresh-button" class="btn btn-default btn-md"><span class="glyphicon glyphicon-refresh"></span></button>
+			<button id="aggregate-button" class="btn btn-default btn-md">Aggregate</button>
+		</div>
 
-	<div class="btn-group col-md-4">
-	 	<button id="day-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='1'>Daily</button>
-	 	<button id="week-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='7'>Weekly</button>
-	 	<button id="month-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='30'>Monthly</button>
-	</div>
+		<div class="btn-group">
+		 	<button id="day-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='1'>Daily</button>
+		 	<button id="week-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='7'>Weekly</button>
+		 	<button id="month-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='30'>Monthly</button>
+		</div>
 
-	<div class="btn-group col-md-4">
-	 	<button id="week-period-button" type="button" class="btn btn-default btn-md" data-period='7'>7 days</button>
-	 	<button id="month-period-button" type="button" class="btn btn-default btn-md" data-period='30'>30 days</button>
-	 	<button id="3-months-period-button" type="button" class="btn btn-default btn-md" data-period='90'>90 days</button>
-	 	<button id="year-period-button" type="button" class="btn btn-default btn-md" data-period='365'>365 days</button>
+		<div class="btn-group">
+		 	<button id="week-period-button" type="button" class="btn btn-default btn-md" data-period='7'>7 days</button>
+		 	<button id="month-period-button" type="button" class="btn btn-default btn-md" data-period='30'>30 days</button>
+		 	<button id="3-months-period-button" type="button" class="btn btn-default btn-md" data-period='90'>90 days</button>
+		 	<button id="year-period-button" type="button" class="btn btn-default btn-md" data-period='365'>365 days</button>
+		</div>
 	</div>
-
 </div>
 
 <div class="row">
@@ -54,7 +56,8 @@
 	draw_plot(url_data, m, w, h, Interactions.frequency, Interactions.period, false);
 
 	initialize_aggregate_button(url_data, m, w, h);
-	initialize_buttons (url_data, m, w, h) ;
+	initialize_refresh_button();
+	initialize_buttons (url_data, m, w, h);
 
 
 </script>

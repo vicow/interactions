@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="241c3a4e-6c32-49a8-9543-a9b2224f8d3d" name="Default" comment="" />
+    <list default="true" id="241c3a4e-6c32-49a8-9543-a9b2224f8d3d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/interact.py" afterPath="$PROJECT_DIR$/webapp/interact.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/templates/interactions.html" afterPath="$PROJECT_DIR$/webapp/templates/interactions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/interactions.ipynb" afterPath="$PROJECT_DIR$/notebook/interactions.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/static/interactions.js" afterPath="$PROJECT_DIR$/webapp/static/interactions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/templates/skeleton.html" afterPath="$PROJECT_DIR$/webapp/templates/skeleton.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/static/style.css" afterPath="$PROJECT_DIR$/webapp/static/style.css" />
+    </list>
     <ignored path="interactions.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,19 +33,19 @@
       <file leaf-file-name="interact.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/interact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="1020">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="1110">
+              <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_data.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="generate_data.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notebook/generate_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45180723" vertical-offset="360" max-vertical-offset="1410">
+            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1410">
               <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -52,21 +59,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
               <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-              <folding>
-                <marker date="1413562377000" expanded="true" signature="0:47" placeholder="import ..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_interactions.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="get_interactions.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notebook/get_interactions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1560">
-              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.27108434" vertical-offset="75" max-vertical-offset="1560">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
               <folding>
-                <marker date="1413626535000" expanded="true" signature="0:119" placeholder="import ..." />
-                <marker date="1413626535000" expanded="true" signature="1435:2380" placeholder="..." />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,8 +103,8 @@
         <option value="$PROJECT_DIR$/notebook/user_actions.py" />
         <option value="$PROJECT_DIR$/notebook/fetch_interactions.py" />
         <option value="$PROJECT_DIR$/notebook/get_interactions.py" />
-        <option value="$PROJECT_DIR$/webapp/interact.py" />
         <option value="$PROJECT_DIR$/notebook/generate_data.py" />
+        <option value="$PROJECT_DIR$/webapp/interact.py" />
       </list>
     </option>
   </component>
@@ -398,7 +402,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20702402" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20702402" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1864139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -444,41 +448,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/retrieve_interactions.py">
+    <entry file="file://$PROJECT_DIR$/notebook/generate_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1410">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding>
-            <marker date="1413562377000" expanded="true" signature="0:47" placeholder="import ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/get_interactions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1560">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-          <folding>
-            <marker date="1413626535000" expanded="true" signature="0:119" placeholder="import ..." />
-            <marker date="1413626535000" expanded="true" signature="1435:2380" placeholder="..." />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/interact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="1020">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="1110">
+          <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/generate_data.py">
+    <entry file="file://$PROJECT_DIR$/notebook/retrieve_interactions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45180723" vertical-offset="360" max-vertical-offset="1410">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/get_interactions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27108434" vertical-offset="75" max-vertical-offset="1560">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 import json
 import sys
 sys.path.append('..')
@@ -51,9 +51,15 @@ def interactions():
 
     response = {'MICHAEL': i_michael, 'SEBASTIAN': i_sebastian, 'CHRISTIAN': i_christian}
 
-    print response
-
     return json.dumps(response, separators=(',', ':'))
+
+@app.route('/refresh')
+def refresh():
+    get_interactions(MICHAEL, BASE_URL, INTERACTIONS_URL, store=True)
+    get_interactions(CHRISTIAN, BASE_URL, INTERACTIONS_URL, store=True)
+    get_interactions(SEBASTIAN, BASE_URL, INTERACTIONS_URL, store=True)
+
+    return json.dumps({'refreshed': True}, separators=(',', ':'))
 
 
 

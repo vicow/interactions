@@ -204,6 +204,27 @@ function initialize_aggregate_button(url_data, m, w, h) {
 	});
 }
 
+function initialize_refresh_button() {
+	var refresh_button = $('#refresh-button');
+
+	refresh_button.click(function() {
+
+		$.getJSON('/refresh', function(data) {
+			if (data.refreshed) {
+
+				var alert = '<div class="alert alert-success" role="alert">Interactions data refreshed.</div>'
+
+				$(body).append(alert);
+
+				console.log("Refreshed data.");
+			} else
+				console.log("Couldn't refresh data.")
+		})
+
+	});
+
+}
+
 
 function initialize_buttons (url_data, m, w, h) {
 	
