@@ -47,7 +47,7 @@ def sample_interactions(interactions, frequency, period):
             samples.append([])
 
     # Reverse list of number of interactions to have it from most ancient to most recent
-    num_interactions = [len(x) for x in samples]
+    num_interactions = [len(x) for x in reversed(samples)]
 
     return samples, num_interactions
 

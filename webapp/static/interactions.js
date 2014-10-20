@@ -23,7 +23,7 @@ function initialize_graph(m, w, h) {
 	// Add a legend
 	graph.append("svg:g")
 		.attr("id", "legend")
-		.attr("transform", "translate(" + (w / 4) + ", " + (h + 50) + ")");
+		.attr("transform", "translate(0, " + (h + 50) + ")");
 
 	var legend = d3.select("#legend");
 	// Michael
@@ -206,21 +206,26 @@ function initialize_aggregate_button(url_data, m, w, h) {
 
 function initialize_refresh_button() {
 	var refresh_button = $('#refresh-button');
+	var icon = refresh_button.find('i')
 
 	refresh_button.click(function() {
 
+		icon.addClass('fa-spin');
+
 		$.getJSON('/refresh', function(data) {
+			icon.removeClass('fa-spin');
 			if (data.refreshed) {
 
-				var alert = '<div class="alert alert-success" role="alert">Interactions data refreshed.</div>'
+				var alert = '<div class="alert alert-success alert-dismissible" role="alert">\
+							  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>\
+							  Interactions data refreshed.\
+							</div>'
 
-				$(body).append(alert);
-
-				console.log("Refreshed data.");
-			} else
+				$('#main-content').prepend(alert);
+			} else {
 				console.log("Couldn't refresh data.")
-		})
-
+			}
+		});
 	});
 
 }
