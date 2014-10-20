@@ -3,7 +3,23 @@
 {% block content %}
 
 <div id="controls" class="row">
-	<button class="btn btn-default btn-lg">Year</button>
+	<div class="col-md-4">
+		<button id="aggregate-button" class="btn btn-default btn-md">Aggregate</button>
+	</div>
+
+	<div class="btn-group col-md-4">
+	 	<button id="day-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='1'>Daily</button>
+	 	<button id="week-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='7'>Weekly</button>
+	 	<button id="month-frequency-button" type="button" class="btn btn-default btn-md" data-frequency='30'>Monthly</button>
+	</div>
+
+	<div class="btn-group col-md-4">
+	 	<button id="week-period-button" type="button" class="btn btn-default btn-md" data-period='7'>7 days</button>
+	 	<button id="month-period-button" type="button" class="btn btn-default btn-md" data-period='30'>30 days</button>
+	 	<button id="3-months-period-button" type="button" class="btn btn-default btn-md" data-period='90'>90 days</button>
+	 	<button id="year-period-button" type="button" class="btn btn-default btn-md" data-period='365'>365 days</button>
+	</div>
+
 </div>
 
 <div class="row">
@@ -26,10 +42,19 @@
 	var m = [60, 60, 60, 60]; // margins
 	var w = $('.container').width() - m[1] - m[3]; // width
 	var h = 500 - m[0] - m[2]; // height
-	
-	var url = "{{ url_for('interactions') }}";
 
-	draw_plot(url, m, w, h, 1, 14);
+	initialize_graph(m, w, h);
+	
+	var url_data = "{{ url_for('interactions') }}";
+
+	Interactions = {};
+	Interactions.frequency = 7;
+	Interactions.period = 365;
+
+	draw_plot(url_data, m, w, h, Interactions.frequency, Interactions.period, false);
+
+	initialize_aggregate_button(url_data, m, w, h);
+	initialize_buttons (url_data, m, w, h) ;
 
 
 </script>
