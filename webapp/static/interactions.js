@@ -12,13 +12,28 @@ function initialize_graph(m, w, h) {
 	graph.append("svg:g")
 		.attr('id', 'x-axis')
 		.attr("class", "x axis")
-		.attr("transform", "translate(0," + h + ")");
+		.attr("transform", "translate(0," + (h + 5) + ")");
+
+	d3.select('#x-axis').append("text")      // text label for the x axis
+        .attr("x", w / 2 )
+        .attr("y",  50 )
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .text("Time");
 
 	// Add the y-axis to the left
 	graph.append("svg:g")
 		.attr("id", "y-axis")
 		.attr("class", "y axis")
-		.attr("transform", "translate(-25,0)");
+		.attr("transform", "translate(-5,0)");
+
+	d3.select('#y-axis').append("text")      // text label for the x axis
+        .attr("x", - h / 2 )
+        .attr("y", -40 )
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .attr("transform", "rotate(-90)")
+        .text("Interactions");
 
 	// Add a legend
 	graph.append("svg:g")

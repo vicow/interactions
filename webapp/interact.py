@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request
 import json
 import sys
 sys.path.append('..')
@@ -7,7 +7,6 @@ from notebook.get_interactions import get_interactions
 from notebook.generate_data import generate_data
 
 app = Flask(__name__)
-
 # URLs
 
 BASE_URL = "https://api.interact.io/v2"
@@ -36,7 +35,7 @@ print " * Ready"
 # Server
 
 @app.route('/')
-def hello_world():
+def interact():
     return render_template('interactions.html')
 
 @app.route('/interactions')
@@ -60,9 +59,6 @@ def refresh():
     get_interactions(SEBASTIAN, BASE_URL, INTERACTIONS_URL, store=True)
 
     return json.dumps({'refreshed': True}, separators=(',', ':'))
-
-
-
 
 
 if __name__ == '__main__':
